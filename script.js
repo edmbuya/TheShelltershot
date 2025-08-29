@@ -642,7 +642,7 @@ Message: ${message}
 
 I'm interested in booking with TheShelteredShot. Can you help me?`;
     
-    const phoneNumber = '254700123456';
+    const phoneNumber = '254740062654';
     const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(whatsappMessage)}`;
     
     window.open(whatsappURL, '_blank');
