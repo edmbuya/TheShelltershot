@@ -1,4 +1,4 @@
-// Roamer Respite BnB Website JavaScript
+// TheShelteredShot BnB Website JavaScript
 
 // Initialize EmailJS
 (function() {
@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initializeSmoothScrolling();
     initializeAnimations();
     
-    console.log('Roamer Respite website initialized successfully!');
+    console.log('TheShelteredShot website initialized successfully!');
 });
 
 // Date Picker Initialization
@@ -426,7 +426,7 @@ function sendBookingNotificationEmail() {
         const reference = generateBookingReference();
         
         const templateParams = {
-            to_email: 'reservations@roamerrespite.co.ke',
+            to_email: 'reservations@theshelteredshot.co.ke',
             from_name: `${firstName} ${lastName}`,
             from_email: email,
             phone: phone,
@@ -475,7 +475,7 @@ function sendContactFormEmail(event) {
     submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin me-2"></i>Sending...';
     
     const templateParams = {
-        to_email: 'info@roamerrespite.co.ke',
+        to_email: 'info@theshelteredshot.co.ke',
         from_name: name,
         from_email: email,
         subject: subject,
@@ -630,5 +630,5 @@ window.addEventListener('error', function(event) {
 console.log(`
 🏠 Roamer Respite - Luxury Vacation Rentals
 🌟 Website loaded successfully!
-📧 For support: info@roamerrespite.co.ke
+📧 For support: info@theshelteredshot.co.ke
 `);
