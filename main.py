@@ -9,6 +9,18 @@ def index():
         html_content = f.read()
     return html_content
 
+@app.route('/privacy-policy.html')
+def privacy_policy():
+    with open('privacy-policy.html', 'r') as f:
+        html_content = f.read()
+    return html_content
+
+@app.route('/cookie-policy.html')
+def cookie_policy():
+    with open('cookie-policy.html', 'r') as f:
+        html_content = f.read()
+    return html_content
+
 @app.route('/styles.css')
 def styles():
     return send_from_directory('.', 'styles.css', mimetype='text/css')
