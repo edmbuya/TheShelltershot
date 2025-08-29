@@ -552,8 +552,11 @@
                                 <textarea class="form-control" id="contactMessage" rows="5" required></textarea>
                             </div>
                             <div class="text-center">
-                                <button type="submit" class="btn btn-primary btn-lg">
+                                <button type="submit" class="btn btn-primary btn-lg me-3">
                                     <i class="fas fa-paper-plane me-2"></i>Send Message
+                                </button>
+                                <button type="button" class="btn btn-success btn-lg" onclick="sendWhatsAppMessage()">
+                                    <i class="fab fa-whatsapp me-2"></i>WhatsApp
                                 </button>
                             </div>
                         </form>
@@ -563,7 +566,7 @@
             
             <!-- Contact Info -->
             <div class="row mt-5">
-                <div class="col-md-4 text-center">
+                <div class="col-lg-3 col-md-6 text-center mb-4">
                     <div class="contact-info">
                         <div class="contact-icon">
                             <i class="fas fa-map-marker-alt"></i>
@@ -572,7 +575,7 @@
                         <p>Westlands, Nairobi<br>Kenya</p>
                     </div>
                 </div>
-                <div class="col-md-4 text-center">
+                <div class="col-lg-3 col-md-6 text-center mb-4">
                     <div class="contact-info">
                         <div class="contact-icon">
                             <i class="fas fa-phone"></i>
@@ -581,13 +584,27 @@
                         <p>+254 700 123 456<br>+254 733 987 654</p>
                     </div>
                 </div>
-                <div class="col-md-4 text-center">
+                <div class="col-lg-3 col-md-6 text-center mb-4">
                     <div class="contact-info">
                         <div class="contact-icon">
                             <i class="fas fa-envelope"></i>
                         </div>
                         <h5>Email Us</h5>
                         <p>info@theshelteredshot.co.ke<br>reservations@theshelteredshot.co.ke</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center mb-4">
+                    <div class="contact-info">
+                        <div class="contact-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <h5>WhatsApp Us</h5>
+                        <p>
+                            <a href="https://wa.me/254700123456?text=Hello! I'm interested in your vacation rental services." 
+                               class="whatsapp-link" target="_blank">
+                               +254 700 123 456
+                            </a>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -611,6 +628,10 @@
                         <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
                         <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
                         <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://wa.me/254700123456?text=Hello! I'm interested in TheShelteredShot vacation rentals." 
+                           class="social-link whatsapp-social" target="_blank">
+                           <i class="fab fa-whatsapp"></i>
+                        </a>
                     </div>
                 </div>
                 
@@ -693,6 +714,15 @@
 
     <!-- Alert Container -->
     <div id="alertContainer" class="alert-container"></div>
+
+    <!-- WhatsApp Floating Button -->
+    <div class="whatsapp-float">
+        <a href="https://wa.me/254700123456?text=Hello! I'm interested in booking a vacation rental with TheShelteredShot. Can you help me?" 
+           target="_blank" class="whatsapp-btn" id="whatsappBtn">
+            <i class="fab fa-whatsapp"></i>
+            <span class="whatsapp-text">Chat with us</span>
+        </a>
+    </div>
 
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>

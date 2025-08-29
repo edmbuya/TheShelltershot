@@ -626,9 +626,31 @@ window.addEventListener('error', function(event) {
     // showAlert('An unexpected error occurred. Please refresh the page.', 'danger');
 });
 
+// WhatsApp Integration
+function sendWhatsAppMessage() {
+    const name = document.getElementById('contactName').value || 'Customer';
+    const email = document.getElementById('contactEmail').value || 'Not provided';
+    const subject = document.getElementById('contactSubject').value || 'General Inquiry';
+    const message = document.getElementById('contactMessage').value || 'Hello!';
+    
+    const whatsappMessage = `Hello! I'm ${name} and I'd like to inquire about your vacation rental services.
+
+Subject: ${subject}
+Email: ${email}
+
+Message: ${message}
+
+I'm interested in booking with TheShelteredShot. Can you help me?`;
+    
+    const phoneNumber = '254700123456';
+    const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(whatsappMessage)}`;
+    
+    window.open(whatsappURL, '_blank');
+}
+
 // Console welcome message
 console.log(`
-🏠 Roamer Respite - Luxury Vacation Rentals
+🏠 TheShelteredShot - Luxury Vacation Rentals
 🌟 Website loaded successfully!
 📧 For support: info@theshelteredshot.co.ke
 `);
