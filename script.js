@@ -1,4 +1,4 @@
-// TheShelteredShot BnB Website JavaScript
+// TheADETIempire BnB Website JavaScript
 
 // Initialize EmailJS
 (function() {
@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initializeSmoothScrolling();
     initializeAnimations();
     
-    console.log('TheShelteredShot website initialized successfully!');
+    console.log('TheADETIempire website initialized successfully!');
 });
 
 // Date Picker Initialization
@@ -426,7 +426,7 @@ function sendBookingNotificationEmail() {
         const reference = generateBookingReference();
         
         const templateParams = {
-            to_email: 'reservations@theshelteredshot.co.ke',
+            to_email: 'reservations@theADETIempire.co.ke',
             from_name: `${firstName} ${lastName}`,
             from_email: email,
             phone: phone,
@@ -475,7 +475,7 @@ function sendContactFormEmail(event) {
     submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin me-2"></i>Sending...';
     
     const templateParams = {
-        to_email: 'info@theshelteredshot.co.ke',
+        to_email: 'info@theADETIempire.co.ke',
         from_name: name,
         from_email: email,
         subject: subject,
@@ -640,7 +640,7 @@ Email: ${email}
 
 Message: ${message}
 
-I'm interested in booking with TheShelteredShot. Can you help me?`;
+I'm interested in booking with TheADETIempire. Can you help me?`;
     
     const phoneNumber = '254740062654';
     const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(whatsappMessage)}`;
@@ -650,7 +650,7 @@ I'm interested in booking with TheShelteredShot. Can you help me?`;
 
 // Console welcome message
 console.log(`
-🏠 TheShelteredShot - Luxury Vacation Rentals
+🏠 TheADETIempire - Luxury Vacation Rentals
 🌟 Website loaded successfully!
-📧 For support: info@theshelteredshot.co.ke
+📧 For support: info@theADETIempire.co.ke
 `);
